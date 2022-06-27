@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.png" />
+    <title>Berlin</title>
+  </head>
+  <body>
+    <header>
+      <h1>Berlin</h1>
+    </header>
+    <nav>
+      <ul class="topThings">
+        <li class="top">
+          <a
+            href="https://www.tripadvisor.com/Hotels-g187323-Berlin-Hotels.html"
+            target="_blank"
+          >
+            Top hotels
+          </a>
+        </li>
+        <li class="top">
+          <a
+            href="https://www.hostelworld.com/blog/best-bars-in-berlin/"
+            target="_blank"
+            >Top bars</a
+          >
+        </li>
+        <li class="top">
+          <a
+            href="https://www.timeout.com/berlin/things-to-do/best-clubs-in-berlin"
+            target="_blank"
+            >Top clubs</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="description">
+        <h2>Keep calm and go to Berlin</h2>
+        <p>
+          Berlin is the <strong>capital</strong> and
+          <strong>largest city of Germany</strong> by both area and population.
+          Its 3.7 million inhabitants make it the European Union's most populous
+          city, according to population within city limits. One of Germany's
+          sixteen constituent states, Berlin is surrounded by the State of
+          Brandenburg and contiguous with Potsdam, Brandenburg's capital.
+          Berlin's urban area, which has a population of around
+          <strong>4.5 million</strong>, is the second most populous urban area
+          in Germany.
+        </p>
+        <img
+          src="https://a.storyblok.com/f/58806/1164x784/edf6fa8563/berlin_city_04_skyline_tv-tower_ef.jpeg"
+          alt="Alexanderplatz"
+        />
+        <div class="attraction">
+          <ol class="attraction">
+            <h2>Top five attractions in Berlin</h2>
+            <li>Reichstag Building</li>
+            <li>Memorial of the Berlin Wall</li>
+            <li>Pergamonmuseum</li>
+            <li>Museum Island</li>
+            <li>Friedrichstadt-Palast</li>
+          </ol>
+        </div>
+      </div>
+      <div class="facts">
+        <ol class="facts">
+          <h2>Interesting facts about Berlin</h2>
+          <li>Berlin is <em>nine times the size of Paris</em></li>
+          <li>
+            <em>4.473 km</em> is the length of the Berlin public transport
+            system
+          </li>
+          <li>Berlin has <em>more bridges than Venice</em></li>
+          <li>There are <em>nine castles</em> in Berlin</li>
+          <li>The Berlin ZOO hosts <em>1.380 different animal species</em></li>
+        </ol>
+      </div>
+      <br />
+      <span>
+        <button class="quizBerlin">Berlin quiz</button>
+      </span>
+      <br />
+      <h3>
+        Everything that you can do in Berlin is listed
+        <a
+          href="https://www.tripadvisor.com/Attractions-g187323-Activities-Berlin.html"
+          target="_blank"
+          >here</a
+        >
+        .
+      </h3>
+      <br />
+      <br />
+    </main>
+    <hr />
+    <footer>
+      <p class="footer">This page was created by Neža Draksler</p>
+    </footer>
+    <script>
+      function visitBerlin() {
+        let name = prompt("What is your name?");
+        let visit = prompt("Have you ever been to Berlin?");
+        visit = visit.toLocaleLowerCase();
+        visit = visit.trim();
+
+        if (visit === "yes") {
+          alert("I hope you had a great time, " + name + "! 😊");
+        } else {
+          alert("You should visit Berlin, " + name + "! 😜");
+        }
+      }
+
+      let quizBerlin = document.querySelector("button");
+      quizBerlin.addEventListener("click", visitBerlin);
+    </script>
+  </body>
+</html>
